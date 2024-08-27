@@ -1,9 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Google Fonts: Manrope -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/a7bd3cf533.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontfamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+    }
+  </style>
+  <body class="font-manrope">
+    <main>
+      <header class="md:container mx-auto">
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="ml-12">
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"
+              ></i
+              ><a class="btn btn-ghost text-xl font-bold ml-0">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 mx-6">
+                <li class="font-bold"><a> Home </a></li>
+                <li class="text-gray-400"><a> Services</a></li>
+                <li class="text-gray-400"><a>Portfolio</a></li>
+                <li class="text-gray-400"><a>Blogs</a></li>
+                <li class="text-gray-400"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="ml-10">
+              <i
+                class="fa-solid fa-magnifying-glass text-[#ddd4d4] drop-shadow-md rounded-full mr-2 border p-2 hidden md:block"
+              ></i>
+              <i
+                class="fa-solid fa-cart-shopping text-[#ddd4d4] bg-white rounded-full border mr-2 p-2 hidden md:block"
+              ></i>
+              <div class="rounded-full hidden md:block">
+                <a class="btn bg-[#ABEF5F] p-3 rounded-full"
+                  >Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-1 text-white"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="border-black">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i
+                  class="fa-solid fa-bars bg-white p-2 drop-shadow-md rounded-full"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <div class="p-10">
+          <div class="flex justify-center mb-5">
+            <img src="./assets/banner.png" alt="" />
+          </div>
+          <h1
+            class="text-center mb-5 text-xl md:text-5xl font-manrope font-black"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p
+            class="text-center mb-5 text-gray-400 text-sm font-light md:text-nm"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <div class="rounded-full text-center">
+            <a class="btn bg-[#ABEF5F] p-3 rounded-full w-full md:w-60">
+              View Details
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 bg-[#9ee949] rounded-full p-1 text-black border-[#ABEF5F] justify-center items-center"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <footer></footer>
+    </main>
+  </body>
 </html>
